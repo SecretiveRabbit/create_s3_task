@@ -5,6 +5,7 @@ pipeline {
         
         stage('Pull') {
             steps {
+                sh 'rm -rf create_s3_task'
                 sh 'git clone https://github.com/SecretiveRabbit/create_s3_task.git'
             }
         }
