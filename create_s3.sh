@@ -17,7 +17,7 @@ cat > bucket-policy.json << EOF
   ]
 }
 EOF
-sleep 6
+sleep 7
 aws s3 cp index.html s3://alexander-stepanov123
 aws s3 cp error.html s3://alexander-stepanov123
 aws s3api put-public-access-block --bucket alexander-stepanov123 --public-access-block-configuration BlockPublicAcls=false,IgnorePublicAcls=false,BlockPublicPolicy=false,RestrictPublicBuckets=false
