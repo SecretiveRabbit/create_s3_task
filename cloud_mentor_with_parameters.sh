@@ -85,7 +85,7 @@ fi
 if [ -z "$site_name" ]; then
     site_name="alexander-stepanov123"
 fi
-s3_output=$(curl -s http://${site_name}.s3-website-us-east-1.amazonaws.com)
+s3_output=$(curl -s https://${site_name}.s3-website-us-east-1.amazonaws.com)
 if [[ "$s3_output" == *"${site_name}"* ]]; then
     ((score_current++))
     echo "The S3 Static Site works"
