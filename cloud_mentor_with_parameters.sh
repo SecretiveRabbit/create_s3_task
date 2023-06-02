@@ -3,7 +3,7 @@
 # Set the initial values for the variables
 score_max=4
 score_current=0
-ip_address="54.209.183.77"
+ip_address="54.83.110.60"
 username="alexander"
 token_name="supertoken"
 token_value="11e4336999ba2df92e4aed4d39e0badb74"
